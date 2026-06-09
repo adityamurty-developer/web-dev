@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            line-height: 1.4;
+        }
+        h1{
+            color: aqua;
+        }
+        /* the specificity of this selector is now 1 + 10 = 11 */
+        h1.red{
+            color: red;
+        }
+        .yellow{ 
+            color: yellow;
+        }
+        .blue{
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="red yellow">CSS Specificity</h1>
+        <p>To calculate specificity assign the value to each part of selectors.</p>
+        <ul>
+            <li>Universal Selector: 0</li>
+            <li>Element Selectors and Pseudo Elements: 1</li>
+            <li>Class Selectors and Attribute Selectors: 10</li>
+            <li>Pseudo Class: 10</li>
+            <li>Id Selectors: 100</li>
+            <li>Inline Style: 1000</li>
+        </ul>
+        <p>When specificity is the same, the browser uses the last declared rule</p>
+        <br>
+        <h1 class="blue">Cascade Algorithm</h1>
+        <p>4 stages of the Cascade Algorithm</p>
+        <ol>
+            <li>Position and Order of Appearance: If two rules have the same specificity, the one written later win</li>
+            <li>Specificity: The selector with higher specificity wins</li>
+            <li>Origin: Determines which CSS rule wins based on where the style comes from (browser default CSS, your CSS, user stylesheet, or browser extension CSS)</li>
+            <li>Importance (!important): This gets the highest priority among normal declarations.</li>
+        </ol>
+    </div>
+</body>
+</html>
