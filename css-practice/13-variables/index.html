@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        /* Syntax of declaring a variable */
+        :root {
+            --primary-color: blue;
+        }
+        /* for using a variable: var(--variable-name) */
+        h1{
+            color: var(--primary-color);
+        }
+
+        h3{
+            color: var(--primary-color);
+        }
+
+        p{
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Variables</h1>
+        <h3>hey i am adi and today i am going to tell you about css variables.</h3><br>
+        <p>CSS Variables (also called Custom Properties) are values that you can store in one place and reuse throughout your CSS.</p>
+    </div>
+</body>
+</html>
