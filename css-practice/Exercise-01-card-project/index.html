@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Card Project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container{
+            width: 420px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 3px 5px 15px grey;
+            line-height: 1.5;
+        }
+        .container img{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .box span{
+            display: inline-block;
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 4px 12px;
+            margin-right: 8px;
+            color: gray;
+            font-size: 14px;
+        }
+        .box h1{
+            margin: 15px 0 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+        }
+        .box p{
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .btn{
+            text-align: center;
+        }
+        .btn button{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #dbeafe;
+            color: #2563eb;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn button:hover{
+            background-color: #bfdbfe;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="shutterstock_1150510607-2048x1024.jpg" alt="Banner">
+
+        <div class="box">
+
+            <span>Skills</span>
+            <span>Tools</span>
+
+            <h1>My Frontend Skills</h1>
+
+            <p>
+                Hi, I'm Rohan, a Frontend Developer skilled in HTML, CSS, and
+                JavaScript. I enjoy designing responsive websites, have basic
+                knowledge of React, am currently learning DSA, and use AI tools
+                like ChatGPT, Lovable, and Replit AI to enhance productivity.
+            </p>
+
+            <div class="btn">
+                <button>Read More</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
