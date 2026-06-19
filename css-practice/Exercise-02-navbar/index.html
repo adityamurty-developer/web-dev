@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            border-bottom: 1px solid #dddddd;
+            box-shadow: 2px 2px 20px #dddddd;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 70px;
+            padding: 0 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightgray;
+        }
+
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .nav-links{
+            display: flex;
+            gap: 25px;
+
+            list-style: none;
+        }
+
+        .nav-links a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">AdiDev</div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
