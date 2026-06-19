@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Cards</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .item{
+            border: 1px solid grey;
+            height: 180px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .item h3{
+            margin-top: 10px;
+        }
+
+        .btns{
+            display: flex;
+            gap: 10px;
+        }
+
+        button{
+            padding: 8px 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="container">
+
+            <div class="item">
+                <h3>HTML5</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>CSS3</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>JavaScript</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>React</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>Node.js</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>Express</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>MongoDB</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>Git & GitHub</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <h3>DSA</h3>
+                <div class="btns">
+                    <button>Learn More</button>
+                    <button>Download</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
