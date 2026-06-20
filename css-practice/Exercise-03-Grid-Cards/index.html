@@ -17,15 +17,47 @@
             font-family: Arial, sans-serif;
         }
 
+        .wrapper{
+            width: fit-content;
+            margin: 10px auto;
+        }
+
+        .heading{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .heading h1{
+            margin: 0;
+            width: 90px;
+            height: 60px;
+            background-color: rgb(245, 245, 82);
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 1px 1px 20px lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        .heading h2{
+            font-weight: 500;
+        }
+
         .container{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            margin-top: 40px;
+            justify-content: center;
         }
 
         .item{
             border: 1px solid grey;
-            height: 180px;
+            height: 140px;
 
             display: flex;
             flex-direction: column;
@@ -51,86 +83,103 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
+        .learn{
+            background-color: lightskyblue;
+        }
+
+        .download{
+            background-color: lightgreen;
+        }
+
     </style>
 </head>
+
 <body>
 
-    <main>
-        <section class="container">
+    <main class="wrapper">
 
+        <div class="heading">
+            <h1>UE</h1>
+            <h2>Frontend Skill Set</h2>
+        </div>
+
+        <section class="container">
+            
             <div class="item">
                 <h3>HTML5</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>CSS3</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>JavaScript</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>React</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>Node.js</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>Express</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>MongoDB</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>Git & GitHub</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
             <div class="item">
                 <h3>DSA</h3>
                 <div class="btns">
-                    <button>Learn More</button>
-                    <button>Download</button>
+                    <button class="learn">Learn More</button>
+                    <button class="download">Download</button>
                 </div>
             </div>
 
         </section>
+
     </main>
 
 </body>
